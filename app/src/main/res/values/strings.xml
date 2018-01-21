@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Diarchy of the walls</string>
+    <string name="settingsBt">Settings</string>
+    <string name="startBt">Start game</string>
+    <string name="connectBt">Connect to game</string>
+    <string name="player1Bt">Player 1</string>
+    <string name="player2Bt">Player 2</string>
+    <string name="player3Bt">Player 3</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Диархия стен</string>
+    <string name="settingsBt">Настройки</string>
+    <string name="startBt">Ночать игру</string>
+    <string name="connectBt">Подключится к игре</string>
+    <string name="player1Bt">Игрок 1</string>
+    <string name="player2Bt">Игрок 2</string>
+    <string name="player3Bt">Игрок 3</string>
+
+</resources>
