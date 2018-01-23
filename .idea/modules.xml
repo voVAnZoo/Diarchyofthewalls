@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Diarchyofthewalls.iml" filepath="$PROJECT_DIR$/Diarchyofthewalls.iml" />
+      <module fileurl="file://C:\Users\misha\AndroidStudioProjects\Diarchyofthewalls\Diarchyofthewalls.iml" filepath="C:\Users\misha\AndroidStudioProjects\Diarchyofthewalls\Diarchyofthewalls.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
