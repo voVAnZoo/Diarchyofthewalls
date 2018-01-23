@@ -6,8 +6,10 @@
     <string name="player1Bt">Игрок 1</string>
     <string name="player2Bt">Игрок 2</string>
     <string name="player3Bt">Игрок 3</string>
-    <string name="p">Пауза</string>
-    <string-array name="Credit">
+    <string name="pBt">Пауза</string>
+    <string name="saveBt">Записать игрe</string>
+    <string name="exitBt">Выйти в главное меню</string>
+    <string-array name="CreditSp">
         <item>Разработчики</item>
         <item>Лев Монахов</item>
         <item>Дмитрий Авдонюшкин</item>

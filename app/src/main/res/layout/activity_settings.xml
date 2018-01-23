@@ -7,29 +7,30 @@
     android:layout_height="match_parent"
     tools:context="com.example.vova.diarchyofthewalls.activity.SettingsActivity">
 
+
+    <TextView
+        android:id="@+id/SoundV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true" />
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/Sound"
+        android:layout_below="@+id/SoundV"
         android:max="100"
         android:progress="1" />
-    <TextView
-        android:id="@+id/Sound"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:layout_marginTop="8dp"
-        android:layout_centerHorizontal="true" />
 
     <Spinner
-        android:id="@+id/credit"
+        android:id="@+id/creditBt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/seekBar"
-        android:entries="@array/Credit" />
+        android:entries="@array/CreditSp" />
 </RelativeLayout>

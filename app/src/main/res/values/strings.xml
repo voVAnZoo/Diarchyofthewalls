@@ -6,8 +6,10 @@
     <string name="player1Bt">Player 1</string>
     <string name="player2Bt">Player 2</string>
     <string name="player3Bt">Player 3</string>
-    <string name="p">Pause</string>
-    <string-array name="Credit">
+    <string name="pBt">Pause</string>
+    <string name="saveBt">List your game</string>
+    <string name="exitBt">Exit to main menu</string>
+    <string-array name="CreditSp">
         <item>Credits</item>
         <item>Lev Monakhov</item>
         <item>Dmitriy Avdonyushkin</item>
