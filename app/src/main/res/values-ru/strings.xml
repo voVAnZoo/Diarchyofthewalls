@@ -1,10 +1,19 @@
 <resources>
     <string name="app_name">Диархия стен</string>
     <string name="settingsBt">Настройки</string>
-    <string name="startBt">Ночать игру</string>
+    <string name="startBt">Начать игру</string>
     <string name="connectBt">Подключится к игре</string>
     <string name="player1Bt">Игрок 1</string>
     <string name="player2Bt">Игрок 2</string>
     <string name="player3Bt">Игрок 3</string>
-
+    <string name="p">Пауза</string>
+    <string-array name="Credit">
+        <item>Разработчики</item>
+        <item>Лев Монахов</item>
+        <item>Дмитрий Авдонюшкин</item>
+        <item>Владимир Зверев</item>
+        <item>Денис Пурытин</item>
+        <item>Миаил Крас</item>
+        <item>Алексей Лапшин</item>
+    </string-array>
 </resources>

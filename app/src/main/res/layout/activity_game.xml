@@ -13,7 +13,14 @@
         android:layout_height="match_parent"
         android:id="@+id/gameWorld"
         />
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p"
+        android:id="@+id/pause"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+ />
 
 
 </RelativeLayout>
