@@ -21,6 +21,21 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
  />
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lBt"
+        android:id="@+id/Left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rBt"
+        android:id="@+id/Right"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/Left"
+        />
 
 </RelativeLayout>

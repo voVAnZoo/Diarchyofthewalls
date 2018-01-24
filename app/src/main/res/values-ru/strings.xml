@@ -9,6 +9,8 @@
     <string name="pBt">Пауза</string>
     <string name="saveBt">Записать игрe</string>
     <string name="exitBt">Выйти в главное меню</string>
+    <string name="lBt">Влево</string>
+    <string name="rBt">Вправо</string>
     <string-array name="CreditSp">
         <item>Разработчики</item>
         <item>Лев Монахов</item>
