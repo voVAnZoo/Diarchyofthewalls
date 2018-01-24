@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lBt"
-        android:id="@+id/Left"
+        android:id="@+id/LeftBt"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         />
@@ -33,9 +33,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rBt"
-        android:id="@+id/Right"
+        android:id="@+id/RightBt"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/Left"
+        android:layout_toLeftOf="@+id/LeftBt"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/itemBt"
+        android:id="@+id/itemBt"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/RightBt"
         />
 
 </RelativeLayout>

@@ -11,6 +11,7 @@
     <string name="exitBt">Выйти в главное меню</string>
     <string name="lBt">Влево</string>
     <string name="rBt">Вправо</string>
+    <string name="itemBt">Предметы</string>
     <string-array name="CreditSp">
         <item>Разработчики</item>
         <item>Лев Монахов</item>
