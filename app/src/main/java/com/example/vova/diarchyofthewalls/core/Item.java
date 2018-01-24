@@ -9,7 +9,7 @@ import android.graphics.Bitmap;
 public class Item {
 
     String name;
-    Bitmap bitmap;
+    Bitmap[] bitmap;
 
     public Item(){
 

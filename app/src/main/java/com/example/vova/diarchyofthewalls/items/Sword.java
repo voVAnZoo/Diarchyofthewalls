@@ -8,6 +8,7 @@ import com.example.vova.diarchyofthewalls.core.Item;
 
 public class Sword extends Item {
 
+    int damage;
     public Sword(){
         super();
     }
