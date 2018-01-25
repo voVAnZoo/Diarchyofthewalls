@@ -10,12 +10,12 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import com.example.vova.diarchyofthewalls.R;
 
-public class ItemActivity extends AppCompatActivity {
+public class EquipmentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item);
+        setContentView(R.layout.activity_equipment);
         int Items_Rows = 5;
         int Items_in_a_row = 5;
 

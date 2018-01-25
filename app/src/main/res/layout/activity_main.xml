@@ -15,10 +15,10 @@
         android:layout_alignParentBottom="true"
          />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/startBt"
+        android:src="@drawable/ng"
         android:id="@+id/startBt"
         android:layout_marginTop="50dp"
         android:layout_alignParentTop="true"
@@ -27,10 +27,10 @@
         android:layout_centerHorizontal="true"
         />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/connectBt"
+        android:src="@drawable/Cont"
         android:id="@+id/connectBt"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>

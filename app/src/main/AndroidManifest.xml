@@ -21,7 +21,8 @@
         <activity android:name=".activity.SettingsActivity" />
         <activity android:name=".activity.GameActivity" />
         <activity android:name=".activity.ConnectActivity" />
-        <activity android:name=".activity.ItemActivity"></activity>
+        <activity android:name=".activity.ItemActivity" />
+        <activity android:name=".activity.EquipmentActivity"></activity>
     </application>
 
 </manifest>
