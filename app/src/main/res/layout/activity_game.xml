@@ -45,5 +45,12 @@
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/RightBt"
         />
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/equipmentBt"
+        android:id="@+id/EqBt"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/itemBt"
+        />
 </RelativeLayout>

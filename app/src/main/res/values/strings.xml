@@ -12,6 +12,7 @@
     <string name="saveBt">List your game</string>
     <string name="exitBt">Exit to main menu</string>
     <string name="itemBt">Items</string>
+    <string name="equipmentBt">Equipment</string>
     <string-array name="CreditSp">
         <item>Credits</item>
         <item>Lev Monakhov</item>

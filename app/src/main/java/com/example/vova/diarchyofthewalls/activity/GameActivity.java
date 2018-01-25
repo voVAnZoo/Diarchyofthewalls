@@ -16,8 +16,12 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
 
         final Button Pause = (Button) findViewById(R.id.PauseBt);
-
+        final Button lef = (Button) findViewById(R.id.LeftBt);
+        final Button rig = (Button) findViewById(R.id.RightBt);
+        final Button ite = (Button) findViewById(R.id.itemBt);
+        final Button Eqi = (Button) findViewById(R.id.EqBt);
         final Intent pau = new Intent(this, PauseActivity.class);
+        final Intent item = new Intent(this, ItemActivity.class);
 
 
         Pause.setOnClickListener(new View.OnClickListener() {
@@ -26,6 +30,11 @@ public class GameActivity extends AppCompatActivity {
                 startActivity(pau);
             }
         });
-
+        ite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(item);
+            }
+        });
     }
 }

@@ -12,6 +12,7 @@
     <string name="lBt">Влево</string>
     <string name="rBt">Вправо</string>
     <string name="itemBt">Предметы</string>
+    <string name="equipmentBt">Экипировка</string>
     <string-array name="CreditSp">
         <item>Разработчики</item>
         <item>Лев Монахов</item>

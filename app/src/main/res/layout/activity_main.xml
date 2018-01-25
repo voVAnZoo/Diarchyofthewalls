@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:theme="@android:style/Theme.Black.NoTitleBar"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,8 +22,8 @@
         android:id="@+id/startBt"
         android:layout_marginTop="50dp"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/connectBt"
-        android:layout_alignEnd="@+id/connectBt"
+        android:layout_alignLeft="@+id/connectBt"
+        android:layout_alignRight="@+id/connectBt"
         android:layout_centerHorizontal="true"
         />
 
