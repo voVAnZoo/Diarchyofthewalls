@@ -10,12 +10,7 @@ import com.example.vova.diarchyofthewalls.R;
 
 public class SettingsActivity extends AppCompatActivity  implements SeekBar.OnSeekBarChangeListener{
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
-    }
-    private TextView mTextView;
+    static TextView mTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +20,7 @@ public class SettingsActivity extends AppCompatActivity  implements SeekBar.OnSe
         final SeekBar seekBar = (SeekBar)findViewById(R.id.seekBar);
         seekBar.setOnSeekBarChangeListener(this);
 
-        mTextView = (TextView)findViewById(R.id.Sound);
+        mTextView = (TextView)findViewById(R.id.SoundV);
         mTextView.setText("Sound 0");
     }
 
