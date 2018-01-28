@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.vova.diarchyofthewalls.R;
 
@@ -15,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Button settings = (Button) findViewById(R.id.settingBt);
-        final Button startG = (Button) findViewById(R.id.startBt);
-        final Button connectG = (Button) findViewById(R.id.connectBt);
+        final ImageButton settings = (ImageButton) findViewById(R.id.settingBt);
+        final ImageButton startG = (ImageButton) findViewById(R.id.startBt);
+        final ImageButton connectG = (ImageButton) findViewById(R.id.connectBt);
         
         final Intent sett = new Intent(this, SettingsActivity.class);
         final Intent conn = new Intent(this, ConnectActivity.class);

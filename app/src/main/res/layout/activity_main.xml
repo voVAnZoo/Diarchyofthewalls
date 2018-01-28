@@ -7,13 +7,21 @@
     android:layout_height="match_parent"
     tools:context="com.example.vova.diarchyofthewalls.activity.MainActivity">
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/settingsBt"
+        android:src="@drawable/Setti"
         android:id="@+id/settingBt"
         android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/connectBt"
          />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cont"
+        android:id="@+id/connectBt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -27,13 +35,7 @@
         android:layout_centerHorizontal="true"
         />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/Cont"
-        android:id="@+id/connectBt"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
+
 
 
 
