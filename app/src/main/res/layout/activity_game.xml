@@ -27,7 +27,7 @@
         android:src="@drawable/left"
         android:id="@+id/LeftBt"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/RightBt"
+        android:layout_alignParentLeft="true"
         />
     <ImageButton
         android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
         android:text="@string/itemBt"
         android:id="@+id/itemBt"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/LeftBt"
+        android:layout_toLeftOf="@+id/RightBt"
         />
     <Button
         android:layout_width="wrap_content"
@@ -59,7 +59,6 @@
         android:text="@string/ChangeLvlBt"
         android:id="@+id/ChangeLvlBt"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/EqBt"
         />
 
     <Button
@@ -68,6 +67,5 @@
         android:text="@string/ChangeStrBt"
         android:id="@+id/ChangeBt"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/EqBt"
         />
 </RelativeLayout>
