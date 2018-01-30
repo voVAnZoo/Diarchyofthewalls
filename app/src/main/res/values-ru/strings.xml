@@ -9,8 +9,8 @@
     <string name="pBt">Пауза</string>
     <string name="saveBt">Записать игрe</string>
     <string name="exitBt">Выйти в главное меню</string>
-    <string name="lBt">Влево</string>
-    <string name="rBt">Вправо</string>
+    <string name="ChangeStrBt">Сменить улицу</string>
+    <string name="ChangeLvlBt">Сменить уровень улицы</string>
     <string name="itemBt">Предметы</string>
     <string name="equipmentBt">Экипировка</string>
     <string-array name="CreditSp">
@@ -18,7 +18,6 @@
         <item>Лев Монахов</item>
         <item>Дмитрий Авдонюшкин</item>
         <item>Владимир Зверев</item>
-        <item>Денис Пурытин</item>
         <item>Миаил Крас</item>
         <item>Алексей Лапшин</item>
     </string-array>

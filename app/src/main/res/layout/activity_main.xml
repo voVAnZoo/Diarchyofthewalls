@@ -10,7 +10,7 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/Setti"
+        android:src="@drawable/setti"
         android:id="@+id/settingBt"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/connectBt"
@@ -34,7 +34,6 @@
         android:layout_alignRight="@+id/connectBt"
         android:layout_centerHorizontal="true"
         />
-
 
 
 

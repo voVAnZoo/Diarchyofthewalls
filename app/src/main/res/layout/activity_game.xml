@@ -21,21 +21,21 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
  />
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lBt"
+        android:src="@drawable/left"
         android:id="@+id/LeftBt"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/RightBt"
         />
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/rBt"
+        android:src="@drawable/right"
         android:id="@+id/RightBt"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/LeftBt"
+        android:layout_alignParentRight="true"
         />
     <Button
         android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
         android:text="@string/itemBt"
         android:id="@+id/itemBt"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/RightBt"
+        android:layout_toLeftOf="@+id/LeftBt"
         />
     <Button
         android:layout_width="wrap_content"
@@ -52,5 +52,22 @@
         android:id="@+id/EqBt"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/itemBt"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChangeLvlBt"
+        android:id="@+id/ChangeLvlBt"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/EqBt"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChangeStrBt"
+        android:id="@+id/ChangeBt"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/EqBt"
         />
 </RelativeLayout>
