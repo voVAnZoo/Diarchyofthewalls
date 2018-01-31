@@ -9,6 +9,7 @@
     <string name="pBt">Пауза</string>
     <string name="saveBt">Записать игрe</string>
     <string name="exitBt">Выйти в главное меню</string>
+    <string name="Hunger">Голод:</string>
     <string name="ChangeStrBt">Сменить улицу</string>
     <string name="ChangeLvlBt">Сменить уровень улицы</string>
     <string name="itemBt">Предметы</string>

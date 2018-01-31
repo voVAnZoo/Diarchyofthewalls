@@ -7,10 +7,11 @@
     <string name="player2Bt">Player 2</string>
     <string name="player3Bt">Player 3</string>
     <string name="pBt">Pause</string>
-    <string name="ChangeStrBt">Change street</string>
-    <string name="ChangeLvlBt">Change street Level</string>
     <string name="saveBt">List your game</string>
     <string name="exitBt">Exit to main menu</string>
+    <string name="ChangeStrBt">Change street</string>
+    <string name="ChangeLvlBt">Change street Level</string>
+    <string name="Hunger">Hunger:</string>
     <string name="itemBt">Items</string>
     <string name="equipmentBt">Equipment</string>
     <string-array name="CreditSp">
