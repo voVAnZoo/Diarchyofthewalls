@@ -46,8 +46,8 @@ public class GameActivity extends AppCompatActivity {
         });
         lef.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                switch (MotionEvent.getAction()) {
+            public boolean onTouch(View view, MotionEvent Event) {
+                switch (Event.getAction()) {
                     case MotionEvent.ACTION_BUTTON_PRESS:
 
                     case MotionEvent.ACTION_UP:
@@ -58,8 +58,8 @@ public class GameActivity extends AppCompatActivity {
         });
         rig.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                switch (MotionEvent.getAction()) {
+            public boolean onTouch(View view, MotionEvent Event) {
+                switch (Event.getAction()) {
                     case MotionEvent.ACTION_BUTTON_PRESS:
                     case MotionEvent.ACTION_UP:
                         break;
