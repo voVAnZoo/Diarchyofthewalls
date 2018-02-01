@@ -5,22 +5,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import com.example.vova.diarchyofthewalls.R;
 
-public class MainActivity extends AppCompatActivity {
+public class PauseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pause);
 
-        final ImageButton settings = (ImageButton) findViewById(R.id.settingBt);
-        final ImageButton startG = (ImageButton) findViewById(R.id.startBt);
+        final Button settings = (Button) findViewById(R.id.settingsBt);
+        final Button Exit = (Button) findViewById(R.id.ExitBt);
+
 
         final Intent sett = new Intent(this, SettingsActivity.class);
-        final Intent save = new Intent(this, SavesActivity.class);
+        final Intent exi = new Intent(this, MainActivity.class);
+
 
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,10 +30,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        startG.setOnClickListener(new View.OnClickListener() {
+
+        Exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(save);
+                startActivity(exi);
             }
         });
     }

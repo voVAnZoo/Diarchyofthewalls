@@ -13,7 +13,74 @@
         android:layout_height="match_parent"
         android:id="@+id/gameWorld"
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pBt"
+        android:id="@+id/PauseBt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left"
+        android:id="@+id/LeftBt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right"
+        android:id="@+id/RightBt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/itemBt"
+        android:id="@+id/itemBt"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/RightBt"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/equipmentBt"
+        android:id="@+id/EqBt"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/itemBt"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChangeLvlBt"
+        android:id="@+id/ChangeLvlBt"
+        android:layout_alignParentBottom="true"
+        />
 
-
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChangeStrBt"
+        android:id="@+id/ChangeBt"
+        android:layout_alignParentBottom="true"
+        />
+    <ProgressBar
+        android:id="@+id/pb_horizontal"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/PauseBt"
+        android:max="100" />
+    <TextView
+        android:id="@+id/tv_progress_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pb_horizontal"
+        android:background="@android:color/transparent"
+        android:gravity="center" />
 </RelativeLayout>
