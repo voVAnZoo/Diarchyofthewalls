@@ -8,7 +8,10 @@ import com.example.vova.diarchyofthewalls.core.Item;
 
 public class Arrmor extends Item {
 
-    public Arrmor(){
+    public int type;
+
+    public Arrmor(int type){
         super();
+        this.type = type;
     }
 }
