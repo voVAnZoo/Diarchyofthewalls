@@ -9,16 +9,16 @@ import android.graphics.Canvas;
 
 public class Entity {
 
-    double x;
-    double y;
+    public double x;
+    public double y;
 
-    double speedX;
-    double speedY;
+    public double speedX;
+    public double speedY;
 
-    String name;
+    public String name;
 
-    double hp;
-    Bitmap[] bitmap;
+    public double hp;
+    public  Bitmap[] bitmap;
 
     public Entity(){
 

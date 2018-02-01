@@ -6,12 +6,14 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.example.vova.diarchyofthewalls.R;
+
 /**
  * Created by Vova on 20.01.2018.
  */
 
 public class GameWorld extends View {
-
+    public Player p= new Player()  ;
     public GameWorld(Context context) {
         super(context);
     }

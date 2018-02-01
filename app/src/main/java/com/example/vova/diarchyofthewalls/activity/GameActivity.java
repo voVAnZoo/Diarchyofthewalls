@@ -13,6 +13,8 @@ import android.widget.ImageButton;
 import com.example.vova.diarchyofthewalls.core.Entity;
 
 import com.example.vova.diarchyofthewalls.R;
+import com.example.vova.diarchyofthewalls.core.GameWorld;
+import com.example.vova.diarchyofthewalls.core.Player;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -24,7 +26,8 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-
+        GameWorld gw =(GameWorld)  findViewById(R.id.gameWorld);
+        Player p =gw.p;
         pbHorizontal = (ProgressBar) findViewById(R.id.pb_horizontal);
         tvProgressHorizontal = (TextView) findViewById(R.id.tv_progress_horizontal);
 
