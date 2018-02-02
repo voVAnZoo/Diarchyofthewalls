@@ -18,7 +18,7 @@ public class Entity {
     public String name;
 
     public double hp;
-    public  Bitmap[] bitmap;
+    public Bitmap[] bitmap;
 
     public Entity(){
 
