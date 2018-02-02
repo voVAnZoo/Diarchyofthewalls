@@ -11,7 +11,7 @@ public class Entity {
 
     public double x;
     public double y;
-
+    public boolean life;
     public double speedX;
     public double speedY;
 

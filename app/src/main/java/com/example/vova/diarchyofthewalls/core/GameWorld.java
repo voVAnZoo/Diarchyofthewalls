@@ -14,6 +14,7 @@ import com.example.vova.diarchyofthewalls.R;
 
 public class GameWorld extends View {
     public Player p= new Player()  ;
+    public Entity e= new Entity ();
     public GameWorld(Context context) {
         super(context);
     }

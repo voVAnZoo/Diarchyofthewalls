@@ -26,8 +26,10 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        GameWorld gw =(GameWorld)  findViewById(R.id.gameWorld);
-        Player p =gw.p;
+        final GameWorld gw =(GameWorld)  findViewById(R.id.gameWorld);
+        final Player p =gw.p;
+        final Entity e =gw.e;
+        e.x=100;
         pbHorizontal = (ProgressBar) findViewById(R.id.pb_horizontal);
         tvProgressHorizontal = (TextView) findViewById(R.id.tv_progress_horizontal);
 
@@ -37,12 +39,12 @@ public class GameActivity extends AppCompatActivity {
         final Button ite = (Button) findViewById(R.id.itemBt);
         final Button Eqi = (Button) findViewById(R.id.EqBt);
         final Button Chal = (Button) findViewById(R.id.ChangeLvlBt);
-        final Button chas = (Button) findViewById(R.id.ChangeBt);
+        final Button Chas = (Button) findViewById(R.id.ChangeBt);
         final Intent pau = new Intent(this, PauseActivity.class);
         final Intent item = new Intent(this, ItemActivity.class);
-
+        final Intent battle = new Intent(this, BattleActivity.class);
         Chal.setEnabled(false);
-        chas.setEnabled(false);
+        Chas.setEnabled(false);
 
         Pause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +63,12 @@ public class GameActivity extends AppCompatActivity {
             public boolean onTouch(View view, MotionEvent Event) {
                 switch (Event.getAction()) {
                     case MotionEvent.ACTION_BUTTON_PRESS:
-
+                        p.x=p.x-p.speedX;
+                        if (p.x==100)
+                            Chal.setEnabled(true);
+                        if (p.x==150)
+                            Chas.setEnabled(true);
+                        break;
                     case MotionEvent.ACTION_UP:
                         break;
                 }
@@ -73,7 +80,16 @@ public class GameActivity extends AppCompatActivity {
             public boolean onTouch(View view, MotionEvent Event) {
                 switch (Event.getAction()) {
                     case MotionEvent.ACTION_BUTTON_PRESS:
-
+                        p.x=p.x+p.speedX;
+                        if (p.x==e.x)
+                            startActivity(battle);
+                        if (e.life)
+                            e.death();
+                        if (p.x==100)
+                            Chal.setEnabled(true);
+                        if (p.x==150)
+                            Chas.setEnabled(true);
+                        break;
                     case MotionEvent.ACTION_UP:
                         break;
                 }
