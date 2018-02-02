@@ -13,7 +13,7 @@ public class Entity {
     public double y;
     public boolean life;
     public double speedX;
-    public double speedY;
+
 
     public String name;
 
