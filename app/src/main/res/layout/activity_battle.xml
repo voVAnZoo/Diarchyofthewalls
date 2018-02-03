@@ -7,6 +7,32 @@
     android:layout_height="match_parent"
     tools:context="com.example.vova.diarchyofthewalls.activity.BattleActivity">
 
+    <TextView
+        android:id="@+id/AttackAction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/DefenceAction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/EnemyAction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/Turn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center" />
+
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,6 +41,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         />
+
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,6 +50,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         />
+
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,6 +59,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         />
+
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,4 +68,5 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         />
+
 </RelativeLayout>
