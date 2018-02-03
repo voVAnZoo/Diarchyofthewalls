@@ -7,4 +7,36 @@
     android:layout_height="match_parent"
     tools:context="com.example.vova.diarchyofthewalls.activity.BattleActivity">
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left"
+        android:id="@+id/DamageBt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left"
+        android:id="@+id/DefenceBt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left"
+        android:id="@+id/DamageUpBt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left"
+        android:id="@+id/EvasionBt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
 </RelativeLayout>

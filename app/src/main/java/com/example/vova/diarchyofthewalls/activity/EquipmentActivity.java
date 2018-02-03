@@ -14,6 +14,7 @@ public class EquipmentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_equipment);
+
         int ItemsRows = 5;
         int ItemsInRow = 5;
 

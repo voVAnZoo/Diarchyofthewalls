@@ -26,9 +26,11 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+
         final GameWorld gw =(GameWorld)  findViewById(R.id.gameWorld);
         final Player p =gw.p;
         final Entity e =gw.e;
+
         e.x=100;
         pbHorizontal = (ProgressBar) findViewById(R.id.pb_horizontal);
         tvProgressHorizontal = (TextView) findViewById(R.id.tv_progress_horizontal);
@@ -40,9 +42,11 @@ public class GameActivity extends AppCompatActivity {
         final Button Eqi = (Button) findViewById(R.id.EqBt);
         final Button Chal = (Button) findViewById(R.id.ChangeLvlBt);
         final Button Chas = (Button) findViewById(R.id.ChangeBt);
+
         final Intent pau = new Intent(this, PauseActivity.class);
         final Intent item = new Intent(this, ItemActivity.class);
         final Intent battle = new Intent(this, BattleActivity.class);
+
         Chal.setEnabled(false);
         Chas.setEnabled(false);
 
@@ -52,12 +56,14 @@ public class GameActivity extends AppCompatActivity {
                 startActivity(pau);
             }
         });
+
         ite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(item);
             }
         });
+
         lef.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent Event) {

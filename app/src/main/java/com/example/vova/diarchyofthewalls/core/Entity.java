@@ -11,13 +11,16 @@ public class Entity {
 
     public double x;
     public double y;
-    public boolean life;
+
     public double speedX;
 
+    public boolean life;
 
     public String name;
 
     public double hp;
+    public double damage;
+
     public Bitmap[] bitmap;
 
     public Entity(){

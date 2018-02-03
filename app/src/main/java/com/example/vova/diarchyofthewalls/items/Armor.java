@@ -11,6 +11,7 @@ public class Armor extends Item {
     public  int  type;
     public  double defence;
     public  int durabilyti;
+
     public Armor(int type,double defence,int durabilyti){
         super();
         this.type=type;
