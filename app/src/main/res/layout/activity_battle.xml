@@ -8,26 +8,38 @@
     tools:context="com.example.vova.diarchyofthewalls.activity.BattleActivity">
 
     <TextView
-        android:id="@+id/AttackAction"
+        android:id="@+id/Action1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:gravity="center" />
 
     <TextView
-        android:id="@+id/DefenceAction"
+        android:id="@+id/Action2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:gravity="center" />
     <TextView
-        android:id="@+id/EnemyAction"
+        android:id="@+id/Action3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:gravity="center" />
     <TextView
-        android:id="@+id/Turn"
+        android:id="@+id/Action4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/Action5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/Action6"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -38,6 +50,14 @@
         android:layout_height="wrap_content"
         android:src="@drawable/left"
         android:id="@+id/DamageBt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left"
+        android:id="@+id/DefDownBt"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         />

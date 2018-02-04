@@ -20,6 +20,7 @@ public class Entity {
 
     public double hp;
     public double damage;
+    public double defence;
 
     public Bitmap[] bitmap;
 
