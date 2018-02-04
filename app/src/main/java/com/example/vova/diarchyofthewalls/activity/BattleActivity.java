@@ -119,9 +119,27 @@ public class BattleActivity extends AppCompatActivity {
                     kn1 = turn+1;
                     kn5 = turn+1;
                     if (damup)
-                        e.hp = e.hp-p.damage*1.5;
+                        if (defdown)
+                            if (e.defence/2<p.damage*1.5)
+                                e.hp = e.hp-p.damage*1.5+e.defence/2;
+                            else
+                                e.hp = e.hp;
+                        else
+                        if (e.defence<p.damage*1.5)
+                            e.hp = e.hp-p.damage*1.5+e.defence;
+                        else
+                            e.hp = e.hp;
                     else
-                        e.hp = e.hp-p.damage;
+                    if (defdown )
+                        if (e.defence/2<p.damage)
+                            e.hp = e.hp-p.damage+e.defence/2;
+                        else
+                            e.hp = e.hp;
+                    else
+                        if (e.defence<p.damage)
+                            e.hp = e.hp-p.damage+e.defence;
+                        else
+                            e.hp = e.hp;
                     Damage.setEnabled(false);
                     Damage.setImageResource(R.drawable.left);
                     DamageUp.setEnabled(false);
