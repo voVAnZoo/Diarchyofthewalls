@@ -15,6 +15,7 @@
     <string name="itemBt">Items</string>
     <string name="equipmentBt">Equipment</string>
     <string name="Turn">Now it is turn </string>
+    <string name="EndBt">End turn</string>
     <string name="AttackAction1">Your damage is increased by one and a half times.</string>
     <string name="AttackAction2">You attack for </string>
     <string name="AttackAction3">You reduce the defence of the enemy twice.</string>

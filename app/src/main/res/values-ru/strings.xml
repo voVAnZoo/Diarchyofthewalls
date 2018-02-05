@@ -14,6 +14,16 @@
     <string name="ChangeLvlBt">Сменить уровень улицы</string>
     <string name="itemBt">Предметы</string>
     <string name="equipmentBt">Экипировка</string>
+    <string name="Turn">Сейчас ход номер </string>
+    <string name="EndBt">акончить ход</string>
+    <string name="AttackAction1">Ваш урон увелмчен в 1.5 раза</string>
+    <string name="AttackAction2">Вы наносите урон в размере </string>
+    <string name="AttackAction3">Защита противника уменьшенна в два раза.</string>
+    <string name="DefenceAction1">Ваша защита увеличена на</string>
+    <string name="DefenceAction2">Вы уклоняетесь от следующей атки противника.</string>
+    <string name="EnemyAction1">Противник атакует вас кислотой.</string>
+    <string name="EnemyAction2">Противник атакует вас огнём.</string>
+    <string name="EnemyAction3">Противник атакует вас на</string>
     <string-array name="CreditSp">
         <item>Разработчики</item>
         <item>Лев Монахов</item>

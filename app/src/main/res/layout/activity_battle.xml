@@ -64,7 +64,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:Text="@string/end"
+        android:Text="@string/EndBt"
         android:id="@+id/EndTBt"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
