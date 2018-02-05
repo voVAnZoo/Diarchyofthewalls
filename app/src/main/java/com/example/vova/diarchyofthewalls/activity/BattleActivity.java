@@ -29,6 +29,7 @@ public class BattleActivity extends AppCompatActivity {
     int kn5 = 0;
 
     int i;
+    double damage;
 
     boolean acid;
     boolean fire;
@@ -94,7 +95,8 @@ public class BattleActivity extends AppCompatActivity {
                         if (defdown)
                             if (e.defence/2<p.damage*1.5) {
                                 e.hp = e.hp - p.damage * 1.5 + e.defence / 2;
-                                Action[6].setText("@string/AttackAction2");
+                                damage=p.damage * 1.5 - e.defence / 2;
+                                Action[6].setText("@string/AttackAction2" + damage);
                                 if (e.hp <= 0)
                                     e.life = true;
                             }
@@ -103,7 +105,8 @@ public class BattleActivity extends AppCompatActivity {
                         else
                         if (e.defence<p.damage*1.5) {
                             e.hp = e.hp - p.damage * 1.5 + e.defence;
-                            Action[6].setText("@string/AttackAction2");
+                            damage=p.damage * 1.5 - e.defence ;
+                            Action[6].setText("@string/AttackAction2" + damage);
                             if (e.hp <= 0)
                                 e.life = true;
                         }
@@ -113,7 +116,8 @@ public class BattleActivity extends AppCompatActivity {
                     if (defdown )
                         if (e.defence/2<p.damage){
                             e.hp = e.hp-p.damage+e.defence/2;
-                            Action[6].setText("@string/AttackAction2");
+                            damage=p.damage  - e.defence / 2;
+                            Action[6].setText("@string/AttackAction2" + damage);
                             if (e.hp <= 0)
                                 e.life = true;}
                         else
@@ -121,7 +125,8 @@ public class BattleActivity extends AppCompatActivity {
                     else
                         if (e.defence<p.damage) {
                             e.hp = e.hp - p.damage + e.defence;
-                            Action[6].setText("@string/AttackAction2");
+                            damage=p.damage  - e.defence;
+                            Action[6].setText("@string/AttackAction2" + damage);
                             if (e.hp <= 0)
                                 e.life = true;
                         }
@@ -206,11 +211,12 @@ public class BattleActivity extends AppCompatActivity {
                     }
                     if (turn % 3 == 0 && e.damage > defup / 2) {
                         p.hp = p.hp - e.damage + defup / 2;
+                        damage=e.damage - defup / 2;
                         for (i = 0; i < 10; i++) {
                             Action[i + 1] = Action[i];
                         }
                     }
-                    Action[6].setText("@string/EnemyAction3");
+                    Action[6].setText("@string/EnemyAction3" + damage);
                     ++turn;
                     defup = 0;
                     if (acid)
@@ -220,6 +226,7 @@ public class BattleActivity extends AppCompatActivity {
                     if (turn % 2 == kn1 % 2) {
                         DamageUp.setEnabled(true);
                         DamageUp.setImageResource(R.drawable.right);
+                        damup=false;
                     }
                     if (turn % 2 == kn2 % 2) {
                         Defence.setEnabled(true);
@@ -228,6 +235,7 @@ public class BattleActivity extends AppCompatActivity {
                     if (turn % 2 == kn5 % 2) {
                         DefDown.setEnabled(true);
                         DefDown.setImageResource(R.drawable.right);
+                        defdown=false;
                     }
                     if (turn % 2 == kn3 % 2){
                         Damage.setEnabled(true);
