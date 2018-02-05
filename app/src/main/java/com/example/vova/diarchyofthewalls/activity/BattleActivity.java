@@ -20,7 +20,7 @@ public class BattleActivity extends AppCompatActivity {
 
     public TextView[] Action = new TextView[6];
 
-    int turn=0;
+    int turn=1;
 
     int kn1 = 0;
     int kn4 = 0;
@@ -53,6 +53,8 @@ public class BattleActivity extends AppCompatActivity {
         final ImageButton Evasion = (ImageButton) findViewById(R.id.EvasionBt);
         final ImageButton DefDown = (ImageButton) findViewById(R.id.DefDownBt);
 
+        final Button Turn = (Button) findViewById(R.id.EndTBt);
+
         Action[1] = (TextView) findViewById(R.id.Action1);
         Action[2] = (TextView) findViewById(R.id.Action2);
         Action[3] = (TextView) findViewById(R.id.Action3);
@@ -62,36 +64,6 @@ public class BattleActivity extends AppCompatActivity {
 
         final Intent EndGame = new Intent(this, MainActivity.class);
 
-        while (p.hp > 0 && e.hp > 0) {
-            ++turn;
-            defup = 0;
-            if (acid)
-                p.hp = p.hp - 2;
-            if (fire)
-                p.hp = p.hp - 3;
-            if (turn % 2 == kn1 % 2) {
-                DamageUp.setEnabled(true);
-                DamageUp.setImageResource(R.drawable.right);
-            }
-            if (turn % 2 == kn2 % 2) {
-                Defence.setEnabled(true);
-                Defence.setImageResource(R.drawable.right);
-            }
-            if (turn % 2 == kn5 % 2) {
-                DefDown.setEnabled(true);
-                DefDown.setImageResource(R.drawable.right);
-            }
-            if (turn % 2 == kn3 % 2){
-                Damage.setEnabled(true);
-                Damage.setImageResource(R.drawable.right);
-            }
-            if (turn % 2 == kn4 % 2) {
-                Evasion.setEnabled(true);
-                Evasion.setImageResource(R.drawable.right);
-            }
-            for (i = 0; i < 10; i++) {
-                Action[i+1]=Action[i];
-            }
             Action[6].setText("@string/Turn" + turn);
             DamageUp.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -120,24 +92,39 @@ public class BattleActivity extends AppCompatActivity {
                     kn5 = turn+1;
                     if (damup)
                         if (defdown)
-                            if (e.defence/2<p.damage*1.5)
-                                e.hp = e.hp-p.damage*1.5+e.defence/2;
+                            if (e.defence/2<p.damage*1.5) {
+                                e.hp = e.hp - p.damage * 1.5 + e.defence / 2;
+                                Action[6].setText("@string/AttackAction2");
+                                if (e.hp <= 0)
+                                    e.life = true;
+                            }
                             else
                                 e.hp = e.hp;
                         else
-                        if (e.defence<p.damage*1.5)
-                            e.hp = e.hp-p.damage*1.5+e.defence;
+                        if (e.defence<p.damage*1.5) {
+                            e.hp = e.hp - p.damage * 1.5 + e.defence;
+                            Action[6].setText("@string/AttackAction2");
+                            if (e.hp <= 0)
+                                e.life = true;
+                        }
                         else
                             e.hp = e.hp;
                     else
                     if (defdown )
-                        if (e.defence/2<p.damage)
+                        if (e.defence/2<p.damage){
                             e.hp = e.hp-p.damage+e.defence/2;
+                            Action[6].setText("@string/AttackAction2");
+                            if (e.hp <= 0)
+                                e.life = true;}
                         else
                             e.hp = e.hp;
                     else
-                        if (e.defence<p.damage)
-                            e.hp = e.hp-p.damage+e.defence;
+                        if (e.defence<p.damage) {
+                            e.hp = e.hp - p.damage + e.defence;
+                            Action[6].setText("@string/AttackAction2");
+                            if (e.hp <= 0)
+                                e.life = true;
+                        }
                         else
                             e.hp = e.hp;
                     Damage.setEnabled(false);
@@ -149,7 +136,6 @@ public class BattleActivity extends AppCompatActivity {
                     for (i = 0; i < 10; i++) {
                         Action[i+1]=Action[i];
                     }
-                    Action[6].setText("@string/AttackAction2");
                 }
             });
             DefDown.setOnClickListener(new View.OnClickListener() {
@@ -201,31 +187,61 @@ public class BattleActivity extends AppCompatActivity {
                     Action[6].setText("@string/DefenceAction1");
                 }
             });
-            if (turn % 3 == 1) {
-                acid = true;
-                for (i = 0; i < 10; i++) {
-                    Action[i+1]=Action[i];
+            Turn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (turn % 3 == 1) {
+                        acid = true;
+                        for (i = 0; i < 10; i++) {
+                            Action[i + 1] = Action[i];
+                        }
+                        Action[6].setText("@string/EnemyAction1");
+                    }
+                    if (turn % 3 == 2) {
+                        fire = true;
+                        for (i = 0; i < 10; i++) {
+                            Action[i + 1] = Action[i];
+                        }
+                        Action[6].setText("@string/EnemyAction2");
+                    }
+                    if (turn % 3 == 0 && e.damage > defup / 2) {
+                        p.hp = p.hp - e.damage + defup / 2;
+                        for (i = 0; i < 10; i++) {
+                            Action[i + 1] = Action[i];
+                        }
+                    }
+                    Action[6].setText("@string/EnemyAction3");
+                    ++turn;
+                    defup = 0;
+                    if (acid)
+                        p.hp = p.hp - 2;
+                    if (fire)
+                        p.hp = p.hp - 3;
+                    if (turn % 2 == kn1 % 2) {
+                        DamageUp.setEnabled(true);
+                        DamageUp.setImageResource(R.drawable.right);
+                    }
+                    if (turn % 2 == kn2 % 2) {
+                        Defence.setEnabled(true);
+                        Defence.setImageResource(R.drawable.right);
+                    }
+                    if (turn % 2 == kn5 % 2) {
+                        DefDown.setEnabled(true);
+                        DefDown.setImageResource(R.drawable.right);
+                    }
+                    if (turn % 2 == kn3 % 2){
+                        Damage.setEnabled(true);
+                        Damage.setImageResource(R.drawable.right);
+                    }
+                    if (turn % 2 == kn4 % 2) {
+                        Evasion.setEnabled(true);
+                        Evasion.setImageResource(R.drawable.right);
+                    }
+                    for (i = 0; i < 10; i++) {
+                        Action[i+1]=Action[i];
+                    }
+                    Action[6].setText("@string/Turn" + turn);
                 }
-                Action[6].setText("@string/EnemyAction1");
-            }
-            if (turn % 3 == 2) {
-                fire = true;
-                for (i = 0; i < 10; i++) {
-                    Action[i+1]=Action[i];
-                }
-                Action[6].setText("@string/EnemyAction1");
-            }
-            if (turn % 3 == 0 && e.damage > defup / 2){
-                    p.hp = p.hp - e.damage + defup / 2;
-                for (i = 0; i < 10; i++) {
-                    Action[i+1]=Action[i];
-                }
-                Action[6].setText("@string/EnemyAction1");
-            }
-        }
-        if (p.hp <= 0)
-            startActivity(EndGame);
-        else
-            e.life = true;
+            });
     }
 }
