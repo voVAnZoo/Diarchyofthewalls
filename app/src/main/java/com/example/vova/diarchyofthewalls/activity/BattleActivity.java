@@ -184,6 +184,8 @@ public class BattleActivity extends AppCompatActivity {
                     kn4 = turn;
                     kn2 = turn+1;
                     damup = true;
+                    Defence.setEnabled(false);
+                    Defence.setImageResource(R.drawable.left);
                     Evasion.setEnabled(false);
                     Evasion.setImageResource(R.drawable.left);
                     for (i = 0; i < 10; i++) {
