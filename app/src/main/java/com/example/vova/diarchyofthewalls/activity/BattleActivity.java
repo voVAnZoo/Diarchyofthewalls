@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.ImageButton;
-
+import android.widget.ImageView;
 import com.example.vova.diarchyofthewalls.R;
 import com.example.vova.diarchyofthewalls.core.Entity;
 import com.example.vova.diarchyofthewalls.core.GameWorld;
 import com.example.vova.diarchyofthewalls.core.Player;
 
+import java.awt.Image;
 import java.lang.reflect.Array;
 
 public class BattleActivity extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class BattleActivity extends AppCompatActivity {
     int i;
     double damage;
 
-    boolean acid;
+    boolean poison;
     boolean fire;
 
     boolean damup=false;
@@ -56,12 +57,19 @@ public class BattleActivity extends AppCompatActivity {
 
         final Button Turn = (Button) findViewById(R.id.EndTBt);
 
+        final ImageView Fire = (ImageView) findViewById(R.id.Fire);
+        final ImageView Poison = (ImageView) findViewById(R.id.Poison);
+        final ImageView buff = (ImageView) findViewById(R.id.Buff);
+        final ImageView penet = (ImageView) findViewById(R.id.Armour_Penetration);
+
+
         Action[1] = (TextView) findViewById(R.id.Action1);
         Action[2] = (TextView) findViewById(R.id.Action2);
         Action[3] = (TextView) findViewById(R.id.Action3);
         Action[4] = (TextView) findViewById(R.id.Action4);
         Action[5] = (TextView) findViewById(R.id.Action5);
         Action[6] = (TextView) findViewById(R.id.Action6);
+
 
         final Intent EndGame = new Intent(this, MainActivity.class);
 
@@ -79,6 +87,7 @@ public class BattleActivity extends AppCompatActivity {
                     Damage.setImageResource(R.drawable.left);
                     DefDown.setEnabled(false);
                     DefDown.setImageResource(R.drawable.left);
+                    buff.setImageResource(R.drawable.right);
                     for (i = 0; i < 10; i++) {
                         Action[i+1]=Action[i];
                     }
@@ -156,6 +165,7 @@ public class BattleActivity extends AppCompatActivity {
                     DamageUp.setImageResource(R.drawable.left);
                     DefDown.setEnabled(false);
                     DefDown.setImageResource(R.drawable.left);
+                    penet.setImageResource(R.drawable.right);
                     for (i = 0; i < 10; i++) {
                         Action[i+1]=Action[i];
                     }
@@ -198,10 +208,11 @@ public class BattleActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (turn % 3 == 1) {
-                        acid = true;
+                        poison = true;
                         for (i = 0; i < 10; i++) {
                             Action[i + 1] = Action[i];
                         }
+                        Poison.setImageResource(R.drawable.right);
                         Action[6].setText("@string/EnemyAction1");
                     }
                     if (turn % 3 == 2) {
@@ -209,6 +220,7 @@ public class BattleActivity extends AppCompatActivity {
                         for (i = 0; i < 10; i++) {
                             Action[i + 1] = Action[i];
                         }
+                        Fire.setImageResource(R.drawable.right);
                         Action[6].setText("@string/EnemyAction2");
                     }
                     if (turn % 3 == 0 && e.damage > defup / 2) {
@@ -221,10 +233,10 @@ public class BattleActivity extends AppCompatActivity {
                     Action[6].setText("@string/EnemyAction3" + damage);
                     ++turn;
                     defup = 0;
-                    if (acid)
-                        p.hp = p.hp - 2;
-                    if (fire)
+                    if (poison)
                         p.hp = p.hp - 3;
+                    if (fire)
+                        p.hp = p.hp - 2;
                     if (turn % 2 == kn1 % 2) {
                         DamageUp.setEnabled(true);
                         DamageUp.setImageResource(R.drawable.right);

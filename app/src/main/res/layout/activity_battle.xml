@@ -64,7 +64,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:Text="@string/EndBt"
+        android:text="@string/EndBt"
         android:id="@+id/EndTBt"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
@@ -96,5 +96,40 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         />
-
+    <Image
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/right"
+        android:id="@+id/Pers"
+        />
+    <Image
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/right"
+        android:id="@+id/Poison"
+        />
+    <Image
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/right"
+        android:id="@+id/Fire"
+        />
+    <Image
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/right"
+        android:id="@+id/Enemy"
+        />
+    <Image
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/right"
+        android:id="@+id/Buff"
+        />
+    <Image
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/right"
+        android:id="@+id/Armour_Penetration"
+        />
 </RelativeLayout>
