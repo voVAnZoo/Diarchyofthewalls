@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context="com.example.vova.diarchyofthewalls.activity.BattleActivity">
 
     <TextView
@@ -95,48 +95,48 @@
 
         />
     <Image
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/right"
         android:id="@+id/Pers"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         />
     <Image
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/right"
         android:id="@+id/Poison"
         android:layout_alignLeft="@+id/Buff"
         android:layout_alignBottom="@+id/Pers"
         />
     <Image
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/right"
         android:id="@+id/Fire"
         android:layout_alignLeft="@+id/Poison"
         android:layout_alignBottom="@+id/Pers"
         />
     <Image
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/right"
         android:id="@+id/Enemy"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         />
     <Image
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/right"
         android:id="@+id/Buff"
         android:layout_alignLeft="@+id/Pers"
         android:layout_alignBottom="@+id/Pers"
         />
     <Image
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/right"
         android:id="@+id/Armour_Penetration"
         android:layout_alignRight="@+id/Enemy"
