@@ -32,7 +32,7 @@ public class BattleActivity extends AppCompatActivity {
     int i;
     double damage;
 
-    boolean poison;
+    int poison;
     boolean fire;
 
     boolean damup=false;
@@ -208,7 +208,7 @@ public class BattleActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (turn % 3 == 1) {
-                        poison = true;
+                        poison = poison + 3;
                         for (i = 0; i < 10; i++) {
                             Action[i + 1] = Action[i];
                         }
@@ -233,13 +233,13 @@ public class BattleActivity extends AppCompatActivity {
                     Action[6].setText("@string/EnemyAction3" + damage);
                     ++turn;
                     defup = 0;
-                    if (poison)
-                        p.hp = p.hp - 3;
+                    p.hp = p.hp - poison;
                     if (fire)
                         p.hp = p.hp - 2;
                     if (turn % 2 == kn1 % 2) {
                         DamageUp.setEnabled(true);
                         DamageUp.setImageResource(R.drawable.right);
+                        buff.setImageResource(R.drawable.left);
                         damup=false;
                     }
                     if (turn % 2 == kn2 % 2) {
@@ -249,6 +249,7 @@ public class BattleActivity extends AppCompatActivity {
                     if (turn % 2 == kn5 % 2) {
                         DefDown.setEnabled(true);
                         DefDown.setImageResource(R.drawable.right);
+                        buff.setImageResource(R.drawable.right);
                         defdown=false;
                     }
                     if (turn % 2 == kn3 % 2){

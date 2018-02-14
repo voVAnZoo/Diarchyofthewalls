@@ -12,62 +12,62 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:gravity="center" />
+        android:layout_alignTop="@+id/Action2"
+        />
 
     <TextView
         android:id="@+id/Action2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:gravity="center" />
+        android:layout_alignTop="@+id/Action3"/>
     <TextView
         android:id="@+id/Action3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:gravity="center" />
+        android:layout_alignTop="@+id/Action4"/>
     <TextView
         android:id="@+id/Action4"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:gravity="center" />
+        android:layout_alignTop="@+id/Action5"/>
     <TextView
         android:id="@+id/Action5"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_alignTop="@+id/Action6"/>
     <TextView
         android:id="@+id/Action6"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:gravity="center" />
+        android:layout_matchParent="True"/>
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/left"
         android:id="@+id/DamageBt"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/DefDownBt"
         />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/left"
         android:id="@+id/DefDownBt"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/DamageUpBt"
         />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/EndBt"
         android:id="@+id/EndTBt"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         />
 
     <ImageButton
@@ -75,8 +75,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/left"
         android:id="@+id/DefenceBt"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/EvasionBt"
         />
 
     <ImageButton
@@ -84,8 +83,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/left"
         android:id="@+id/DamageUpBt"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/DefenceBt"
         />
 
     <ImageButton
@@ -93,43 +91,55 @@
         android:layout_height="wrap_content"
         android:src="@drawable/left"
         android:id="@+id/EvasionBt"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/EndTBt"
+
         />
     <Image
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/right"
         android:id="@+id/Pers"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
         />
     <Image
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/right"
         android:id="@+id/Poison"
+        android:layout_alignLeft="@+id/Buff"
+        android:layout_alignBottom="@+id/Pers"
         />
     <Image
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/right"
         android:id="@+id/Fire"
+        android:layout_alignLeft="@+id/Poison"
+        android:layout_alignBottom="@+id/Pers"
         />
     <Image
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/right"
         android:id="@+id/Enemy"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
         />
     <Image
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/right"
         android:id="@+id/Buff"
+        android:layout_alignLeft="@+id/Pers"
+        android:layout_alignBottom="@+id/Pers"
         />
     <Image
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/right"
         android:id="@+id/Armour_Penetration"
+        android:layout_alignRight="@+id/Enemy"
+        android:layout_alignBottom="@+id/Enemy"
         />
 </RelativeLayout>
